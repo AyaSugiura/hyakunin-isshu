@@ -12,7 +12,8 @@
     "alias": "^0.0.5",
     "next": "13.5.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
