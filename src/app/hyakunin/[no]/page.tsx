@@ -8,7 +8,6 @@ const Page = ({params} : {params: {no: string}}) => {
     return (
         <div>
             <Link href={"/hyakunin/"}>一覧に戻る</Link>
-            <img src={data?.image} alt="画像" />
             <Hyakunin hyakunin={data}></Hyakunin>
         </div>
     );
