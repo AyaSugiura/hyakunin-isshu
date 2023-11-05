@@ -7,6 +7,7 @@ import { useState } from "react";
 import Kaminoku from "@/components/Kaminoku";
 import Shimonoku from "@/components/Shimonoku";
 import TopButton from "@/components/button/topButton";
+import DefaultButton from "@/components/button/defaultButton";
 
 const Game = () => {
 
@@ -84,7 +85,9 @@ const Game = () => {
                     <button onClick={handleClickChange}>次の問題</button>
                 </>
             ) : (
-                <button onClick={handleClickChange}>Start!</button>
+                <div onClick={handleClickChange}>
+                <DefaultButton text="start!"></DefaultButton>
+                </div>
             )}
         </>
     )

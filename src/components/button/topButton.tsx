@@ -1,16 +1,12 @@
 import Link from "next/link";
+import DefaultButton from "./defaultButton";
 
 const TopButton = () => {
     return (
-        <Link href={"/"}>
-            <button className="
-                bg-blue-400 hover:bg-blue-700 
-                text-white
-                py-1 px-2 rounded"
-            >
-                TOPに戻る
-            </button>
-        </Link>
+        <DefaultButton 
+            href="/" 
+            text="TOPへ"
+        ></DefaultButton>
     );
 }
 

@@ -1,4 +1,5 @@
 import Hyakunin from "@/components/Hyakunin";
+import DefaultButton from "@/components/button/defaultButton";
 import TopButton from "@/components/button/topButton";
 import Data from "@/data/hyakunin.json"
 import Link from "next/link";
@@ -9,7 +10,7 @@ const Page = ({params} : {params: {no: string}}) => {
     return (
         <>
             <TopButton/>
-            <Link href={"/hyakunin"}>一覧へ</Link>
+            <DefaultButton href="/hyakunin" text="一覧へ"></DefaultButton>
             <Hyakunin hyakunin={data}></Hyakunin>
         </>
     );
