@@ -6,10 +6,10 @@ const Page = ({params} : {params: {no: string}}) => {
     
     const data = Data.find(value => {return value.no.toString() === params.no});
     return (
-        <div>
+        <>
             <Link href={"/hyakunin/"}>一覧に戻る</Link>
             <Hyakunin hyakunin={data}></Hyakunin>
-        </div>
+        </>
     );
 }
 

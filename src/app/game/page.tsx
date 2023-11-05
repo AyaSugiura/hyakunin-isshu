@@ -46,7 +46,7 @@ const Game = () => {
     }
 
     return (
-        <main>
+        <>
             <h1>ゲームコーナー</h1>
             <Link href={"/"}>TOPに戻る</Link>
             {status === "playing" ? (
@@ -85,7 +85,7 @@ const Game = () => {
             ) : (
                 <button onClick={handleClickChange}>Start!</button>
             )}
-        </main>
+        </>
     )
 }
 
