@@ -7,6 +7,7 @@ class HyakuninType {
     yomite: string
     yomite_kana: string
     image: string
+    yaku: string
 
     constructor() {
         this.no = 0;
@@ -17,5 +18,6 @@ class HyakuninType {
         this.yomite = "";
         this.yomite_kana = "";
         this.image = "";
+        this.yaku = "";
       }
 }
