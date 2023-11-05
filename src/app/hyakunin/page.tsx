@@ -1,11 +1,12 @@
+import TopButton from "@/components/button/topButton";
 import Data from "@/data/hyakunin.json"
 import Link from "next/link";
 
 export default () => {
 
     return (
-        <main>
-            <Link href={"/"}>TOPに戻る</Link>
+        <>
+            <TopButton></TopButton>
             {Data.map((item, index) => {
                return (
                 <div>
@@ -13,6 +14,6 @@ export default () => {
                 </div>
                )
             })}
-        </main>
+        </>
     );
 }

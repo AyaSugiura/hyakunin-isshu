@@ -19,7 +19,7 @@ export default function RootLayout({
       <head></head>
       <body>
         <div className='header'>
-          <h1>百人一首 であそぼ</h1>
+          <h1 className='text-center text-3xl'>百人一首 であそぼ</h1>
         </div>
         <main>{children}</main>
       </body>

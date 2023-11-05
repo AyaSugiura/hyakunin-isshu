@@ -1,10 +1,15 @@
 import Link from "next/link";
-import { Button } from "@mantine/core";
 
 const TopButton = () => {
     return (
         <Link href={"/"}>
-            <Button>TOPへ</Button>
+            <button className="
+                bg-blue-400 hover:bg-blue-700 
+                text-white
+                py-1 px-2 rounded"
+            >
+                TOPに戻る
+            </button>
         </Link>
     );
 }

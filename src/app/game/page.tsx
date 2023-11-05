@@ -6,6 +6,7 @@ import {getOptionAndAnswer, optionAndAnswer} from "./game"
 import { useState } from "react";
 import Kaminoku from "@/components/Kaminoku";
 import Shimonoku from "@/components/Shimonoku";
+import TopButton from "@/components/button/topButton";
 
 const Game = () => {
 
@@ -48,7 +49,7 @@ const Game = () => {
     return (
         <>
             <h1>ゲームコーナー</h1>
-            <Link href={"/"}>TOPに戻る</Link>
+            <TopButton></TopButton>
             {status === "playing" ? (
                 <>
                     <h2>問題</h2>
